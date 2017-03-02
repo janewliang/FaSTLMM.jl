@@ -60,7 +60,7 @@ function wls(y::Array{Float64,2},X::Array{Float64,2},w::Array{Float64,1},
     if ( reml )
         ell -=  log(abs(det(r))) - (p/2)*(log(sigma2))
     end
-
+        
     return Wls(b,sigma2,ell)
         
 end
